@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BCB42B791CB4497C00646088 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB42B781CB4497C00646088 /* AppDelegate.swift */; };
+		BCB42B7B1CB4497C00646088 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB42B7A1CB4497C00646088 /* ViewController.swift */; };
+		BCB42B7E1CB4497C00646088 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCB42B7C1CB4497C00646088 /* Main.storyboard */; };
+		BCB42B801CB4497C00646088 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCB42B7F1CB4497C00646088 /* Assets.xcassets */; };
+		BCB42B831CB4497C00646088 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCB42B811CB4497C00646088 /* LaunchScreen.storyboard */; };
+		BCB42B8E1CB4497C00646088 /* firewaterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB42B8D1CB4497C00646088 /* firewaterTests.swift */; };
+		BCB42B991CB4497C00646088 /* firewaterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB42B981CB4497C00646088 /* firewaterUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BCB42B8A1CB4497C00646088 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCB42B6D1CB4497C00646088 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCB42B741CB4497C00646088;
+			remoteInfo = firewater;
+		};
+		BCB42B951CB4497C00646088 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCB42B6D1CB4497C00646088 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCB42B741CB4497C00646088;
+			remoteInfo = firewater;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BCB42B751CB4497C00646088 /* firewater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = firewater.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCB42B781CB4497C00646088 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BCB42B7A1CB4497C00646088 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BCB42B7D1CB4497C00646088 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BCB42B7F1CB4497C00646088 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCB42B821CB4497C00646088 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BCB42B841CB4497C00646088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCB42B891CB4497C00646088 /* firewaterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = firewaterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCB42B8D1CB4497C00646088 /* firewaterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firewaterTests.swift; sourceTree = "<group>"; };
+		BCB42B8F1CB4497C00646088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCB42B941CB4497C00646088 /* firewaterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = firewaterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCB42B981CB4497C00646088 /* firewaterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firewaterUITests.swift; sourceTree = "<group>"; };
+		BCB42B9A1CB4497C00646088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCB42B721CB4497C00646088 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCB42B861CB4497C00646088 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCB42B911CB4497C00646088 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BCB42B6C1CB4497C00646088 = {
+			isa = PBXGroup;
+			children = (
+				BCB42B771CB4497C00646088 /* firewater */,
+				BCB42B8C1CB4497C00646088 /* firewaterTests */,
+				BCB42B971CB4497C00646088 /* firewaterUITests */,
+				BCB42B761CB4497C00646088 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BCB42B761CB4497C00646088 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCB42B751CB4497C00646088 /* firewater.app */,
+				BCB42B891CB4497C00646088 /* firewaterTests.xctest */,
+				BCB42B941CB4497C00646088 /* firewaterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCB42B771CB4497C00646088 /* firewater */ = {
+			isa = PBXGroup;
+			children = (
+				BCB42B781CB4497C00646088 /* AppDelegate.swift */,
+				BCB42B7A1CB4497C00646088 /* ViewController.swift */,
+				BCB42B7C1CB4497C00646088 /* Main.storyboard */,
+				BCB42B7F1CB4497C00646088 /* Assets.xcassets */,
+				BCB42B811CB4497C00646088 /* LaunchScreen.storyboard */,
+				BCB42B841CB4497C00646088 /* Info.plist */,
+			);
+			path = firewater;
+			sourceTree = "<group>";
+		};
+		BCB42B8C1CB4497C00646088 /* firewaterTests */ = {
+			isa = PBXGroup;
+			children = (
+				BCB42B8D1CB4497C00646088 /* firewaterTests.swift */,
+				BCB42B8F1CB4497C00646088 /* Info.plist */,
+			);
+			path = firewaterTests;
+			sourceTree = "<group>";
+		};
+		BCB42B971CB4497C00646088 /* firewaterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BCB42B981CB4497C00646088 /* firewaterUITests.swift */,
+				BCB42B9A1CB4497C00646088 /* Info.plist */,
+			);
+			path = firewaterUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BCB42B741CB4497C00646088 /* firewater */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCB42B9D1CB4497C00646088 /* Build configuration list for PBXNativeTarget "firewater" */;
+			buildPhases = (
+				BCB42B711CB4497C00646088 /* Sources */,
+				BCB42B721CB4497C00646088 /* Frameworks */,
+				BCB42B731CB4497C00646088 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = firewater;
+			productName = firewater;
+			productReference = BCB42B751CB4497C00646088 /* firewater.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BCB42B881CB4497C00646088 /* firewaterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCB42BA01CB4497C00646088 /* Build configuration list for PBXNativeTarget "firewaterTests" */;
+			buildPhases = (
+				BCB42B851CB4497C00646088 /* Sources */,
+				BCB42B861CB4497C00646088 /* Frameworks */,
+				BCB42B871CB4497C00646088 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCB42B8B1CB4497C00646088 /* PBXTargetDependency */,
+			);
+			name = firewaterTests;
+			productName = firewaterTests;
+			productReference = BCB42B891CB4497C00646088 /* firewaterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BCB42B931CB4497C00646088 /* firewaterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCB42BA31CB4497C00646088 /* Build configuration list for PBXNativeTarget "firewaterUITests" */;
+			buildPhases = (
+				BCB42B901CB4497C00646088 /* Sources */,
+				BCB42B911CB4497C00646088 /* Frameworks */,
+				BCB42B921CB4497C00646088 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCB42B961CB4497C00646088 /* PBXTargetDependency */,
+			);
+			name = firewaterUITests;
+			productName = firewaterUITests;
+			productReference = BCB42B941CB4497C00646088 /* firewaterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCB42B6D1CB4497C00646088 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Preksha Koirala";
+				TargetAttributes = {
+					BCB42B741CB4497C00646088 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 5229HAVQ82;
+					};
+					BCB42B881CB4497C00646088 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 5229HAVQ82;
+						TestTargetID = BCB42B741CB4497C00646088;
+					};
+					BCB42B931CB4497C00646088 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 5229HAVQ82;
+						TestTargetID = BCB42B741CB4497C00646088;
+					};
+				};
+			};
+			buildConfigurationList = BCB42B701CB4497C00646088 /* Build configuration list for PBXProject "firewater" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BCB42B6C1CB4497C00646088;
+			productRefGroup = BCB42B761CB4497C00646088 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCB42B741CB4497C00646088 /* firewater */,
+				BCB42B881CB4497C00646088 /* firewaterTests */,
+				BCB42B931CB4497C00646088 /* firewaterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCB42B731CB4497C00646088 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCB42B831CB4497C00646088 /* LaunchScreen.storyboard in Resources */,
+				BCB42B801CB4497C00646088 /* Assets.xcassets in Resources */,
+				BCB42B7E1CB4497C00646088 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCB42B871CB4497C00646088 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCB42B921CB4497C00646088 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCB42B711CB4497C00646088 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCB42B7B1CB4497C00646088 /* ViewController.swift in Sources */,
+				BCB42B791CB4497C00646088 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCB42B851CB4497C00646088 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCB42B8E1CB4497C00646088 /* firewaterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCB42B901CB4497C00646088 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCB42B991CB4497C00646088 /* firewaterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BCB42B8B1CB4497C00646088 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCB42B741CB4497C00646088 /* firewater */;
+			targetProxy = BCB42B8A1CB4497C00646088 /* PBXContainerItemProxy */;
+		};
+		BCB42B961CB4497C00646088 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCB42B741CB4497C00646088 /* firewater */;
+			targetProxy = BCB42B951CB4497C00646088 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BCB42B7C1CB4497C00646088 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCB42B7D1CB4497C00646088 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BCB42B811CB4497C00646088 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCB42B821CB4497C00646088 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BCB42B9B1CB4497C00646088 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BCB42B9C1CB4497C00646088 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCB42B9E1CB4497C00646088 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = firewater/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prekshakoirala.firewater;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BCB42B9F1CB4497C00646088 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = firewater/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prekshakoirala.firewater;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BCB42BA11CB4497C00646088 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = firewaterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prekshakoirala.firewaterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/firewater.app/firewater";
+			};
+			name = Debug;
+		};
+		BCB42BA21CB4497C00646088 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = firewaterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prekshakoirala.firewaterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/firewater.app/firewater";
+			};
+			name = Release;
+		};
+		BCB42BA41CB4497C00646088 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = firewaterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prekshakoirala.firewaterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = firewater;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		BCB42BA51CB4497C00646088 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = firewaterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.prekshakoirala.firewaterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = firewater;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCB42B701CB4497C00646088 /* Build configuration list for PBXProject "firewater" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCB42B9B1CB4497C00646088 /* Debug */,
+				BCB42B9C1CB4497C00646088 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCB42B9D1CB4497C00646088 /* Build configuration list for PBXNativeTarget "firewater" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCB42B9E1CB4497C00646088 /* Debug */,
+				BCB42B9F1CB4497C00646088 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BCB42BA01CB4497C00646088 /* Build configuration list for PBXNativeTarget "firewaterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCB42BA11CB4497C00646088 /* Debug */,
+				BCB42BA21CB4497C00646088 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BCB42BA31CB4497C00646088 /* Build configuration list for PBXNativeTarget "firewaterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCB42BA41CB4497C00646088 /* Debug */,
+				BCB42BA51CB4497C00646088 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BCB42B6D1CB4497C00646088 /* Project object */;
+}
