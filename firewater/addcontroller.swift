@@ -55,16 +55,9 @@ class addcontroller: UIViewController, UIImagePickerControllerDelegate, UINaviga
         
         let base64String = data.base64EncodedStringWithOptions(NSDataBase64EncodingOptions.Encoding64CharacterLineLength)
         
-        var newitem = items()
-        newitem.image1 = base64String;
-        newitem.textmsg = self.mtextfield.text;
         
-        itemlist.append(newitem)
-        
-        
-        
-        let oneitem: NSDictionary = ["text1": newitem.textmsg!, "image1": newitem.image1!];
-        let str = newitem.textmsg;
+        let oneitem: NSDictionary = ["text1": self.mtextfield.text!, "image1": base64String];
+        let str = self.mtextfield.text!
         
         let currentitem = ItemsRef.ref.childByAppendingPath(str)
         
