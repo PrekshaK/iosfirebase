@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		848E8334F810097BD8C5EFB1 /* Pods_firewater.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4FBE4D1F57D23966A985185 /* Pods_firewater.framework */; };
+		BC0F59D51CB6E1D80002FF37 /* fireservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0F59D41CB6E1D80002FF37 /* fireservice.swift */; };
+		BC837AB21CBB3DE800A7F675 /* collectionviewcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC837AB11CBB3DE800A7F675 /* collectionviewcell.swift */; };
+		BC837AB41CBB4F0400A7F675 /* addcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC837AB31CBB4F0400A7F675 /* addcontroller.swift */; };
 		BCB42B791CB4497C00646088 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB42B781CB4497C00646088 /* AppDelegate.swift */; };
 		BCB42B7B1CB4497C00646088 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB42B7A1CB4497C00646088 /* ViewController.swift */; };
 		BCB42B7E1CB4497C00646088 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCB42B7C1CB4497C00646088 /* Main.storyboard */; };
@@ -34,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A16DD0350502376198E48798 /* Pods-firewater.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firewater.debug.xcconfig"; path = "Pods/Target Support Files/Pods-firewater/Pods-firewater.debug.xcconfig"; sourceTree = "<group>"; };
+		BC0F59D41CB6E1D80002FF37 /* fireservice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fireservice.swift; sourceTree = "<group>"; };
+		BC837AB11CBB3DE800A7F675 /* collectionviewcell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = collectionviewcell.swift; sourceTree = "<group>"; };
+		BC837AB31CBB4F0400A7F675 /* addcontroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addcontroller.swift; sourceTree = "<group>"; };
 		BCB42B751CB4497C00646088 /* firewater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = firewater.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCB42B781CB4497C00646088 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCB42B7A1CB4497C00646088 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +55,8 @@
 		BCB42B941CB4497C00646088 /* firewaterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = firewaterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCB42B981CB4497C00646088 /* firewaterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firewaterUITests.swift; sourceTree = "<group>"; };
 		BCB42B9A1CB4497C00646088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0E973F0F5108DE81E5B0474 /* Pods-firewater.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firewater.release.xcconfig"; path = "Pods/Target Support Files/Pods-firewater/Pods-firewater.release.xcconfig"; sourceTree = "<group>"; };
+		E4FBE4D1F57D23966A985185 /* Pods_firewater.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_firewater.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848E8334F810097BD8C5EFB1 /* Pods_firewater.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0651F899B04A61F1ABCA2EE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4FBE4D1F57D23966A985185 /* Pods_firewater.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BCB42B6C1CB4497C00646088 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +100,8 @@
 				BCB42B8C1CB4497C00646088 /* firewaterTests */,
 				BCB42B971CB4497C00646088 /* firewaterUITests */,
 				BCB42B761CB4497C00646088 /* Products */,
+				C265E555200DC6B42C140971 /* Pods */,
+				0651F899B04A61F1ABCA2EE8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +124,9 @@
 				BCB42B7F1CB4497C00646088 /* Assets.xcassets */,
 				BCB42B811CB4497C00646088 /* LaunchScreen.storyboard */,
 				BCB42B841CB4497C00646088 /* Info.plist */,
+				BC0F59D41CB6E1D80002FF37 /* fireservice.swift */,
+				BC837AB11CBB3DE800A7F675 /* collectionviewcell.swift */,
+				BC837AB31CBB4F0400A7F675 /* addcontroller.swift */,
 			);
 			path = firewater;
 			sourceTree = "<group>";
@@ -125,6 +149,15 @@
 			path = firewaterUITests;
 			sourceTree = "<group>";
 		};
+		C265E555200DC6B42C140971 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A16DD0350502376198E48798 /* Pods-firewater.debug.xcconfig */,
+				E0E973F0F5108DE81E5B0474 /* Pods-firewater.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +165,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BCB42B9D1CB4497C00646088 /* Build configuration list for PBXNativeTarget "firewater" */;
 			buildPhases = (
+				DB543A05FA74FF88A5DBF101 /* Check Pods Manifest.lock */,
 				BCB42B711CB4497C00646088 /* Sources */,
 				BCB42B721CB4497C00646088 /* Frameworks */,
 				BCB42B731CB4497C00646088 /* Resources */,
+				871B05EB4C0FF7A3825BF4EF /* Embed Pods Frameworks */,
+				8F18AE6D3A4AD58B39E79E9E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,13 +290,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		871B05EB4C0FF7A3825BF4EF /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-firewater/Pods-firewater-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F18AE6D3A4AD58B39E79E9E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-firewater/Pods-firewater-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB543A05FA74FF88A5DBF101 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BCB42B711CB4497C00646088 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC837AB41CBB4F0400A7F675 /* addcontroller.swift in Sources */,
 				BCB42B7B1CB4497C00646088 /* ViewController.swift in Sources */,
 				BCB42B791CB4497C00646088 /* AppDelegate.swift in Sources */,
+				BC837AB21CBB3DE800A7F675 /* collectionviewcell.swift in Sources */,
+				BC0F59D51CB6E1D80002FF37 /* fireservice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +487,7 @@
 		};
 		BCB42B9E1CB4497C00646088 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A16DD0350502376198E48798 /* Pods-firewater.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = firewater/Info.plist;
@@ -411,6 +499,7 @@
 		};
 		BCB42B9F1CB4497C00646088 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0E973F0F5108DE81E5B0474 /* Pods-firewater.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = firewater/Info.plist;
@@ -487,6 +576,7 @@
 				BCB42B9F1CB4497C00646088 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BCB42BA01CB4497C00646088 /* Build configuration list for PBXNativeTarget "firewaterTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +585,7 @@
 				BCB42BA21CB4497C00646088 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BCB42BA31CB4497C00646088 /* Build configuration list for PBXNativeTarget "firewaterUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +594,7 @@
 				BCB42BA51CB4497C00646088 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
