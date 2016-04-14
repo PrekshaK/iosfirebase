@@ -24,6 +24,10 @@ class addcontroller: UIViewController, UIImagePickerControllerDelegate, UINaviga
     
     
     override func viewDidLoad() {
+        
+        
+        
+        
         imagePicker.delegate = self;
         super.viewDidLoad()
     }

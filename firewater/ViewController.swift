@@ -21,14 +21,31 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
     
     @IBOutlet weak var mcollectionView: UICollectionView!
     var querieddict = [String: [items]]()
-    
+    var authData: FAuthData!
+    var authdataid: String?
 
     static var BASE_URL = "https://koirala.firebaseio.com"
     let stuffItemsRef = Firebase(url: BASE_URL)
     
+   
+    
     
     override func viewDidLoad() {
+        doLogin()
+        
         doQuery();
+        
+        stuffItemsRef.observeAuthEventWithBlock({ authData in
+            if authData != nil{
+                self.getprivatequery(authData);
+                
+            }else{
+            
+                print("not authenticated yet");
+            }
+        })
+        
+        
         super.viewDidLoad();
     }
     
@@ -37,12 +54,79 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
         mcollectionView.reloadData();
         super.viewDidAppear(true);
     }
+    
+    
+
+    
+    
+    
+    
+    
+    func doLogin( ){
+    
+        stuffItemsRef.authUser("myemailid@gmail.com", password: "pass", withCompletionBlock: { (error, authdata) -> Void in
+            
+            if(error == nil ){
+                self.authData = authdata;
+                print(self.authData)
+                self.authdataid = authdata.uid;
+                
+                
+            }else{
+                print("error: \(error)");
+            }
+            
+            
+            
+//            self.stuffItemsRef.childByAppendingPath("users")
+//                .childByAppendingPath("authData.uid")
+//                .setValue(["provider": authData.provider, "displayName": "myemailid"], with completionBlock: {(error,auth) -> Void in
+////                        cb(authData)
+//                })
+//            
+        })
+   
+        
+    }
+    
+    
+    
+    
+    
+    
+    func getprivatequery(authData:FAuthData){
+        
+       
+        
+        var pvdata = self.stuffItemsRef;
+        self.authData = authData
+        pvdata = stuffItemsRef.childByAppendingPath("privatedata").childByAppendingPath(self.authData.uid)
+        
+        print(pvdata)
+        
+        pvdata.observeEventType(.Value, withBlock: { snapshot in
+            print ("printing")
+            
+            print (pvdata.valueForKey("text"));
+         
+        })
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
     
 
     func doQuery(){
         
-        print ("what?")
+      //  print ("what?")
         stuffItemsRef.observeEventType(.Value, withBlock: { snapshot in
             let enumerator = snapshot.children
             queriedlist = [items]();
@@ -66,7 +150,12 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
                     newitem.textmsg = realstring;
                     
                     queriedlist.append(newitem);
-                    print (queriedlist.count)
+                 //   print (queriedlist.count)
+                    
+                    dispatch_async(dispatch_get_main_queue()) { // 2
+                       // self.fadeInNewImage(overlayImage) // 3
+                        self.mcollectionView.reloadData();
+                    }
                 }
          
             }
@@ -86,7 +175,7 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-    //    print (queriedlist.count)
+      //  print (queriedlist.count)
         return queriedlist.count;
         
     }
