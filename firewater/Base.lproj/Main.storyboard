@@ -34,27 +34,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="u6m-kZ-BPz">
-                                <rect key="frame" x="0.0" y="72" width="320" height="488"/>
+                                <rect key="frame" x="7" y="105" width="313" height="419"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="t5Y-kE-bYa">
-                                    <size key="itemSize" width="170" height="198"/>
+                                    <size key="itemSize" width="239" height="198"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectioncell" id="nau-pp-XeK" customClass="collectionviewcell" customModule="firewater" customModuleProvider="target">
-                                        <rect key="frame" x="75" y="64" width="170" height="198"/>
+                                        <rect key="frame" x="37" y="64" width="239" height="198"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="170" height="198"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="239" height="198"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VrS-jS-bxX">
-                                                    <rect key="frame" x="8" y="-6" width="154" height="128"/>
+                                                    <rect key="frame" x="8" y="-6" width="231" height="177"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNh-rG-eJM">
-                                                    <rect key="frame" x="33" y="154" width="115" height="21"/>
+                                                    <rect key="frame" x="33" y="177" width="189" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -76,20 +76,30 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="mSd-72-UUp"/>
+                    </toolbarItems>
                     <navigationItem key="navigationItem" id="mtU-hc-SPb">
+                        <barButtonItem key="leftBarButtonItem" title="See Private Items" id="c4T-7q-VhR">
+                            <connections>
+                                <action selector="private_public:" destination="4sZ-Rl-nzU" id="Wok-nm-Oab"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Add more" id="28g-It-ruW">
                             <connections>
                                 <segue destination="ErT-r0-VYB" kind="push" id="CKI-Sn-GBm"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="mcollectionView" destination="u6m-kZ-BPz" id="uT1-qk-7Vg"/>
+                        <outlet property="pri_pub" destination="c4T-7q-VhR" id="Gay-Ca-lrD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5aO-4j-fPc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3" y="268"/>
+            <point key="canvasLocation" x="2" y="268"/>
         </scene>
         <!--Addcontroller-->
         <scene sceneID="eOA-RW-cvX">
@@ -113,18 +123,25 @@
                                     <action selector="mchoose:" destination="ErT-r0-VYB" eventType="touchUpInside" id="QW8-ak-iia"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5XK-qu-61m">
-                                <rect key="frame" x="130" y="306" width="50" height="30"/>
-                                <state key="normal" title="Upload"/>
-                                <connections>
-                                    <action selector="mupload:" destination="ErT-r0-VYB" eventType="touchUpInside" id="BJr-vb-ZHC"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type something" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ewe-OL-TC8">
                                 <rect key="frame" x="80" y="237" width="190" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XqU-O8-Sax">
+                                <rect key="frame" x="136" y="307" width="48" height="30"/>
+                                <state key="normal" title="Private"/>
+                                <connections>
+                                    <action selector="is_Private:" destination="ErT-r0-VYB" eventType="touchUpInside" id="T70-Oa-7sf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5XK-qu-61m">
+                                <rect key="frame" x="140" y="337" width="50" height="30"/>
+                                <state key="normal" title="Upload"/>
+                                <connections>
+                                    <action selector="mupload:" destination="ErT-r0-VYB" eventType="touchUpInside" id="BJr-vb-ZHC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -132,6 +149,7 @@
                     <connections>
                         <outlet property="mImageView" destination="rOe-CW-X2Q" id="bwQ-JD-H9b"/>
                         <outlet property="mtextfield" destination="ewe-OL-TC8" id="VF4-8N-fwt"/>
+                        <outlet property="private_button" destination="XqU-O8-Sax" id="v4k-eV-Fq3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d1M-Lo-wAE" userLabel="First Responder" sceneMemberID="firstResponder"/>

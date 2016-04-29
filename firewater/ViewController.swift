@@ -9,6 +9,8 @@
 import UIKit
 import Firebase
 
+var authdataid: String?
+var teststring: String?
 
 class items{
     var image1: UIImage?
@@ -19,10 +21,12 @@ var queriedlist = [items]();
 class ViewController: UIViewController,UICollectionViewDataSource, UICollectionViewDelegate {
     
     
-    @IBOutlet weak var mcollectionView: UICollectionView!
+    @IBOutlet weak var pri_pub: UIBarButtonItem!
+    @IBOutlet var mcollectionView: UICollectionView!
     var querieddict = [String: [items]]()
     var authData: FAuthData!
-    var authdataid: String?
+    var pub: Bool!
+    
 
     static var BASE_URL = "https://koirala.firebaseio.com"
     let stuffItemsRef = Firebase(url: BASE_URL)
@@ -31,13 +35,19 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
     
     
     override func viewDidLoad() {
+   
+         super.viewDidLoad();
         doLogin()
         
-        doQuery();
         
+        pub = true;
         stuffItemsRef.observeAuthEventWithBlock({ authData in
             if authData != nil{
-                self.getprivatequery(authData);
+                self.getquery(authData);
+                authdataid = authData.uid;
+
+                
+                 //self.doQuery();
                 
             }else{
             
@@ -46,32 +56,65 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
         })
         
         
-        super.viewDidLoad();
+       
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated);
+        
+        
+        doLogin();
     }
     
     override func viewDidAppear(animated: Bool) {
-        doQuery();
+        //doQuery();
         mcollectionView.reloadData();
         super.viewDidAppear(true);
     }
     
     
 
+    @IBAction func showid(sender: AnyObject) {
+        
+        
+        //print (authdataid)
+    }
+    
+    
+    @IBAction func private_public(sender: AnyObject) {
+        queriedlist = [items]();
+        getquery(self.authData)
+        mcollectionView.reloadData();
+        
+        if (pub == true){
+            
+            
+            pub = false;
+            pri_pub.title = "See Private Items";
+            
+        }else{
+            pub = true;
+            pri_pub.title = "See Public Items";
+            
+        }
+        
+        
+        
+        
+    }
+   
     
     
     
+    func  doLogin( ){
     
-    
-    func doLogin( ){
-    
-        stuffItemsRef.authUser("myemailid@gmail.com", password: "pass", withCompletionBlock: { (error, authdata) -> Void in
+        stuffItemsRef.authUser("another@gmail.com", password: "pass", withCompletionBlock: { (error, authdata) -> Void in
             
             if(error == nil ){
                 self.authData = authdata;
-                print(self.authData)
-                self.authdataid = authdata.uid;
-                
-                
+
+                authdataid = authdata.uid;
+
             }else{
                 print("error: \(error)");
             }
@@ -85,29 +128,65 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
 //                })
 //            
         })
-   
-        
+
     }
     
-    
-    
-    
-    
-    
-    func getprivatequery(authData:FAuthData){
+
+    func getquery(authData:FAuthData){
         
        
         
         var pvdata = self.stuffItemsRef;
         self.authData = authData
-        pvdata = stuffItemsRef.childByAppendingPath("privatedata").childByAppendingPath(self.authData.uid)
         
+        if (pub == true){
+             pvdata = stuffItemsRef.childByAppendingPath("public")
+        }else{
+        pvdata = stuffItemsRef.childByAppendingPath("private").childByAppendingPath(self.authData.uid)
+        }
         print(pvdata)
         
         pvdata.observeEventType(.Value, withBlock: { snapshot in
-            print ("printing")
+          //  print ("printing")
             
-            print (pvdata.valueForKey("text"));
+            if let snap = snapshot.children.allObjects as? [FDataSnapshot]{
+                
+                for snappy in snap {
+                    
+                   //print(snappy.key)
+                    let image = snappy.value["image1"] as! String
+                    
+                    
+                   // print (image)
+                    let text = snappy.value["text1"] as! String
+                    print (text)
+                    
+                    
+                    let decodedData = NSData(base64EncodedString: image as! String, options: NSDataBase64DecodingOptions.IgnoreUnknownCharacters)
+                    let decodedImage = UIImage(data:decodedData!)
+                    
+                    
+                    
+                    
+                    
+                    
+                    var newitem = items();
+                    newitem.image1 = decodedImage! as UIImage
+                    newitem.textmsg = text;
+                    queriedlist.append(newitem);
+                    
+                    dispatch_async(dispatch_get_main_queue()) { // 2
+                        // self.fadeInNewImage(overlayImage) // 3
+                        self.mcollectionView.reloadData();
+                    }
+                                        
+                }
+                
+                
+            }
+            
+            
+           // print (snapshot.valueForKey("text"));
          
         })
         
@@ -165,6 +244,16 @@ class ViewController: UIViewController,UICollectionViewDataSource, UICollectionV
         })
     
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
     
     

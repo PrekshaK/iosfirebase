@@ -13,7 +13,13 @@ import Firebase
 class addcontroller: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var mImageView: UIImageView!
+    var maincontr: ViewController!
+    var is_private: Bool!
+    var currentitem: Firebase!
     
+    
+    
+    @IBOutlet weak var private_button: UIButton!
     
     let imagePicker = UIImagePickerController();
     
@@ -25,6 +31,9 @@ class addcontroller: UIViewController, UIImagePickerControllerDelegate, UINaviga
     
     override func viewDidLoad() {
         
+        is_private = false;
+        print (teststring)
+        print (authdataid)
         
         
         
@@ -32,6 +41,13 @@ class addcontroller: UIViewController, UIImagePickerControllerDelegate, UINaviga
         super.viewDidLoad()
     }
 
+    @IBAction func is_Private(sender: AnyObject) {
+        
+        is_private = true;
+        private_button.backgroundColor = UIColor.yellowColor();
+        
+        
+    }
     
     @IBOutlet weak var mtextfield: UITextField!
     
@@ -44,10 +60,14 @@ class addcontroller: UIViewController, UIImagePickerControllerDelegate, UINaviga
         
         
         
+        
     }
     
     
     @IBAction func mupload(sender: AnyObject) {
+        
+        
+        private_button.backgroundColor = UIColor.whiteColor();
         
         
         var data: NSData = NSData()
@@ -63,7 +83,15 @@ class addcontroller: UIViewController, UIImagePickerControllerDelegate, UINaviga
         let oneitem: NSDictionary = ["text1": self.mtextfield.text!, "image1": base64String];
         let str = self.mtextfield.text!
         
-        let currentitem = ItemsRef.ref.childByAppendingPath(str)
+        currentitem = ItemsRef.ref.childByAppendingPath("public").childByAppendingPath(str);
+        
+        if (is_private == true){
+            is_private = false;
+            
+            print ("done")
+            currentitem = ItemsRef.ref.childByAppendingPath("private").childByAppendingPath(authdataid!).childByAppendingPath(str);
+        }
+        print (currentitem)
         
         currentitem.setValue(oneitem)
         
