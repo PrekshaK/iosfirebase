@@ -8,16 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		848E8334F810097BD8C5EFB1 /* Pods_firewater.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4FBE4D1F57D23966A985185 /* Pods_firewater.framework */; };
-		BC0F59D51CB6E1D80002FF37 /* fireservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0F59D41CB6E1D80002FF37 /* fireservice.swift */; };
 		BC837AB21CBB3DE800A7F675 /* collectionviewcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC837AB11CBB3DE800A7F675 /* collectionviewcell.swift */; };
 		BC837AB41CBB4F0400A7F675 /* addcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC837AB31CBB4F0400A7F675 /* addcontroller.swift */; };
 		BCB42B791CB4497C00646088 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB42B781CB4497C00646088 /* AppDelegate.swift */; };
 		BCB42B7B1CB4497C00646088 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB42B7A1CB4497C00646088 /* ViewController.swift */; };
-		BCB42B7E1CB4497C00646088 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCB42B7C1CB4497C00646088 /* Main.storyboard */; };
 		BCB42B801CB4497C00646088 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCB42B7F1CB4497C00646088 /* Assets.xcassets */; };
 		BCB42B831CB4497C00646088 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCB42B811CB4497C00646088 /* LaunchScreen.storyboard */; };
 		BCB42B8E1CB4497C00646088 /* firewaterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB42B8D1CB4497C00646088 /* firewaterTests.swift */; };
 		BCB42B991CB4497C00646088 /* firewaterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB42B981CB4497C00646088 /* firewaterUITests.swift */; };
+		BCC882801CD3962A00BA44FC /* firebaseStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC8827F1CD3962A00BA44FC /* firebaseStuff.swift */; };
+		BCC882821CD4372B00BA44FC /* loginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC882811CD4372B00BA44FC /* loginController.swift */; };
+		BCC882851CD4434200BA44FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCC882831CD4434200BA44FC /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,13 +40,11 @@
 
 /* Begin PBXFileReference section */
 		A16DD0350502376198E48798 /* Pods-firewater.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firewater.debug.xcconfig"; path = "Pods/Target Support Files/Pods-firewater/Pods-firewater.debug.xcconfig"; sourceTree = "<group>"; };
-		BC0F59D41CB6E1D80002FF37 /* fireservice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fireservice.swift; sourceTree = "<group>"; };
 		BC837AB11CBB3DE800A7F675 /* collectionviewcell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = collectionviewcell.swift; sourceTree = "<group>"; };
 		BC837AB31CBB4F0400A7F675 /* addcontroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addcontroller.swift; sourceTree = "<group>"; };
 		BCB42B751CB4497C00646088 /* firewater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = firewater.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCB42B781CB4497C00646088 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCB42B7A1CB4497C00646088 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BCB42B7D1CB4497C00646088 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BCB42B7F1CB4497C00646088 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCB42B821CB4497C00646088 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCB42B841CB4497C00646088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,6 +54,9 @@
 		BCB42B941CB4497C00646088 /* firewaterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = firewaterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCB42B981CB4497C00646088 /* firewaterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firewaterUITests.swift; sourceTree = "<group>"; };
 		BCB42B9A1CB4497C00646088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCC8827F1CD3962A00BA44FC /* firebaseStuff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = firebaseStuff.swift; sourceTree = "<group>"; };
+		BCC882811CD4372B00BA44FC /* loginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginController.swift; sourceTree = "<group>"; };
+		BCC882841CD4434200BA44FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E0E973F0F5108DE81E5B0474 /* Pods-firewater.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-firewater.release.xcconfig"; path = "Pods/Target Support Files/Pods-firewater/Pods-firewater.release.xcconfig"; sourceTree = "<group>"; };
 		E4FBE4D1F57D23966A985185 /* Pods_firewater.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_firewater.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -120,13 +122,14 @@
 			children = (
 				BCB42B781CB4497C00646088 /* AppDelegate.swift */,
 				BCB42B7A1CB4497C00646088 /* ViewController.swift */,
-				BCB42B7C1CB4497C00646088 /* Main.storyboard */,
+				BCC882831CD4434200BA44FC /* Main.storyboard */,
 				BCB42B7F1CB4497C00646088 /* Assets.xcassets */,
 				BCB42B811CB4497C00646088 /* LaunchScreen.storyboard */,
 				BCB42B841CB4497C00646088 /* Info.plist */,
-				BC0F59D41CB6E1D80002FF37 /* fireservice.swift */,
 				BC837AB11CBB3DE800A7F675 /* collectionviewcell.swift */,
 				BC837AB31CBB4F0400A7F675 /* addcontroller.swift */,
+				BCC8827F1CD3962A00BA44FC /* firebaseStuff.swift */,
+				BCC882811CD4372B00BA44FC /* loginController.swift */,
 			);
 			path = firewater;
 			sourceTree = "<group>";
@@ -268,9 +271,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCC882851CD4434200BA44FC /* Main.storyboard in Resources */,
 				BCB42B831CB4497C00646088 /* LaunchScreen.storyboard in Resources */,
 				BCB42B801CB4497C00646088 /* Assets.xcassets in Resources */,
-				BCB42B7E1CB4497C00646088 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,10 +347,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC837AB41CBB4F0400A7F675 /* addcontroller.swift in Sources */,
+				BCC882801CD3962A00BA44FC /* firebaseStuff.swift in Sources */,
 				BCB42B7B1CB4497C00646088 /* ViewController.swift in Sources */,
+				BCC882821CD4372B00BA44FC /* loginController.swift in Sources */,
 				BCB42B791CB4497C00646088 /* AppDelegate.swift in Sources */,
 				BC837AB21CBB3DE800A7F675 /* collectionviewcell.swift in Sources */,
-				BC0F59D51CB6E1D80002FF37 /* fireservice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,20 +387,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BCB42B7C1CB4497C00646088 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BCB42B7D1CB4497C00646088 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BCB42B811CB4497C00646088 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				BCB42B821CB4497C00646088 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BCC882831CD4434200BA44FC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCC882841CD4434200BA44FC /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -10,12 +10,16 @@ import Foundation
 import UIKit
 import Firebase
 
+var is_private: Bool!
+
 class addcontroller: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var mImageView: UIImageView!
     var maincontr: ViewController!
-    var is_private: Bool!
+    var firestuff: firebaseStuff!
+    
     var currentitem: Firebase!
+    
     
     
     
@@ -65,38 +69,17 @@ class addcontroller: UIViewController, UIImagePickerControllerDelegate, UINaviga
     
     
     @IBAction func mupload(sender: AnyObject) {
-        
-        
+
         private_button.backgroundColor = UIColor.whiteColor();
-        
-        
         var data: NSData = NSData()
-        
-        
         if let image = mImageView.image{
             data = UIImageJPEGRepresentation(image,0.1)!
         }
-        
         let base64String = data.base64EncodedStringWithOptions(NSDataBase64EncodingOptions.Encoding64CharacterLineLength)
-        
-        
         let oneitem: NSDictionary = ["text1": self.mtextfield.text!, "image1": base64String];
         let str = self.mtextfield.text!
         
-        currentitem = ItemsRef.ref.childByAppendingPath("public").childByAppendingPath(str);
-        
-        if (is_private == true){
-            is_private = false;
-            
-            print ("done")
-            currentitem = ItemsRef.ref.childByAppendingPath("private").childByAppendingPath(authdataid!).childByAppendingPath(str);
-        }
-        print (currentitem)
-        
-        currentitem.setValue(oneitem)
-        
-        print ("successfully saved data");
-        
+        firebaseStuff().upload(oneitem, str: str);
         
     }
     
